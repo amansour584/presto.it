@@ -1,11 +1,75 @@
 :root {
-    --primary-color: #00b98e;
-    --primary-dark-color: #02ab83;
-    --primary-light-color: #02ab83;
-    --accent-color: #0e2e50;
+  --primary-color: #1f7373;
+  --primary-dark-color: #02ab83;
+  --primary-light-color: #02ab83;
+  --accent-color: #0e2e50;
 
-    --white: #EFFDF5;
-    --neutral: #666565;
+  --white: #ffeeeb;
+  --neutral: #666565;
 
-    --btn-carousel-size: 48px;
+  --btn-carousel-size: 48px;
+}
+body {
+  background-color: var(--white);
+}
+
+.text-green {
+  color: var(--primary-color);
+}
+.backgroundButton {
+  background-color: var(--primary-color);
+}
+.category-card {
+  border-radius: 12px;
+  padding: 12px;
+  background-color: var(--white);
+}
+.category-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px dashed var(--primary-color);
+  border-radius: 12px;
+  background-color: white;
+}
+.rounded-icon-container {
+  background-color: white;
+  display: flex;
+  width: 64px;
+  height: 64px;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed var(--primary-color);
+  padding: 24px;
+  border-radius: 50%;
+  margin: 24px 0;
+}
+
+.category-body:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+.category-body:hover > p {
+  color: white;
+}
+.rounded-icon-container:hover {
+  background-color: white;
+}
+.backgroundButtonOpacity {
+  background-color: rgb(255, 255, 255, 0.5);
+  border-radius: 10px;
+  box-shadow: rgb(255, 255, 255) 0px 5px 15px;
+}
+.form-background {
+  background-color: var(--white);
+}
+.buttonColor {
+  background-color: var(--primary-color);
+  color: #ffcdc2;
+}
+.buttonColor:hover {
+  background-color: var(--primary-color);
+  color: #ffcdc2;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
