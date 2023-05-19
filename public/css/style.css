@@ -64,12 +64,29 @@ body {
   background-color: var(--white);
 }
 .buttonColor {
-  background-color: var(--primary-color);
+  background-color: var(--accent-color);
   color: #ffcdc2;
 }
 .buttonColor:hover {
-  background-color: var(--primary-color);
+  background-color: var(--accent-color);
   color: #ffcdc2;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.backGround {
+  background-color: var(--primary-color);
+}
+
+.sellCard {
+  color: black;
+  background-color: rgb(234, 112, 112);
+}
+
+.searchCard {
+  color: black;
+  background-color: rgb(112, 234, 120);
+}
+
+.opacitysell {
+  opacity: 50%;
 }
