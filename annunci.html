@@ -77,8 +77,8 @@
                     </button>
                   </li>
                 </ul>
-                <button class="btn buttonColor rounded-2" type="submit">
-                  Home
+               
+               
                 </button>
               </div>
             </ul>
@@ -88,7 +88,8 @@
     </header>
     <main>
       <div class="container my-5 py-3 backGround rounded-3">
-        <div class="row">
+        <form  id="filteringForm">
+          <div class="row">
           <div class="col-md-6 col-12">
             <div class="row">
               <div class="col-12">
@@ -96,10 +97,10 @@
                   <input
                     type="text"
                     class="form-control"
-                    id="searchInput"
+                    id="searchInputValue"
                     placeholder="Cerca"
                   />
-                  <label for="searchInput"></label>
+                  <label for="searchInputValue"></label>
                 </div>
               </div>
               <div class="col-12 col-md-6">
@@ -107,7 +108,7 @@
                   <input
                     type="number"
                     class="form-control"
-                    id="minePriceInput"
+                    id="minPriceInput"
                     min="0"
                     placeholder="Prezzo minimo"
                   />
@@ -152,26 +153,25 @@
                     aria-label="Default select example"
                   >
                     <option value="" selected>Nessun ordine</option>
-                    <option value="">Dal piu recente</option>
-                    <option value="">Dal piu vecchio</option>
-                    <option value="">Dal piu costoso</option>
-                    <option value="">Dal meno costoso</option>
-                    <option value="">Dalla A alla Z</option>
-                    <option value="">Dalla Z alla A</option>
+                    <option value="descByDate">Dal piu recente</option>
+                    <option value="ascByDate">Dal piu vecchio</option>
+                    <option value="descByPrice">Dal piu costoso</option>
+                    <option value="ascByPrice">Dal meno costoso</option>
+                    <option value="descByAlpha">Dalla A alla Z</option>
+                    <option value="ascByAlpha">Dalla Z alla A</option>
                   </select>
                   <label for="sortSelect"></label>
                 </div>
               </div>
               <div class="col-md-6 col-12">
                 <div class="col-12 d-flex justify-content-center">
-                  <button class="btn buttonColor w-100" type="submit">
-                    <i class="bi bi-search"></i>
-                  </button>
+                 
+                  <button class="btn buttonColor w-100 bi bi-search" type="submit" ></button>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </div></form>
       </div>
     </main>
 
